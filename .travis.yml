@@ -1,0 +1,12 @@
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install pdftk
+branches:
+  only:
+  - master
+language: ruby
+rvm:
+  - 2.4.1
+  - 2.3.1
+  - 2.2.5
+  - jruby-9.1.2.0
